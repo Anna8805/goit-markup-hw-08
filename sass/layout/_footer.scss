@@ -1,0 +1,123 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: $background-footer;
+
+    &-list {
+        list-style: none;
+    }
+
+    &-address {
+        margin-top: 20px;
+    }
+
+    &-contacts {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+    }
+    
+    &-social-list {
+        display: flex;
+        justify-content: space-between;
+        width: 206px;
+        height: 44px;
+    }
+
+    &-right-part {
+        margin-left: 70px;
+    }
+}
+
+.logo-white {
+    color: $logo-text-footer;
+}
+
+.footer-item {
+    margin-top: 9px;
+
+    &-link {
+        color: $footer-color-item;
+    }
+
+    &-address-link {
+        color: $footer-color-item-address;
+    }
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.social-list-link-dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.social-list-svg-dark {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+// .footer .container {
+//     display: flex;
+//     align-items: baseline;
+// }
+
+// .footer-list {
+//     list-style: none;
+// }
+
+// .social-list-link-dark:hover,
+// .social-list-link-dark:focus {
+//     background-color: $accent-color;
+// }
+
+// .footer-social-list {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 206px;
+//     height: 44px;
+// }
+
+// .footer-item-link {
+//     color: $footer-color-item;
+// }
+
+// .footer-item-address-link {
+//     color: $footer-color-item-address;
+// }
+
+// .footer-right-part {
+//     margin-left: 70px;
+// }
+
+// .footer-address {
+//     margin-top: 20px;
+// }
+
+// .footer-contacts {
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 24px;
+//     letter-spacing: 0.03em;
+// }

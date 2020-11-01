@@ -1,0 +1,116 @@
+.features-section {
+    padding: 94px 0;
+}
+
+.features-section .list {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.list-item {
+    align-self: center;
+    width: 270px;
+    height: 251px;
+
+    &::before {
+        display: block;
+        content: "";
+        height: 120px;
+        background-size: 70px 70px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f5f4fA;
+        margin-bottom: 30px;
+        border-radius: 4px;
+    }
+}
+
+.icon {
+    &-antenna::before {
+        background-image: url("../images/antenna.svg");
+    }
+
+    &-clock::before {
+        background-image: url("../images/clock.svg");
+    }
+
+    &-diagram::before {
+        background-image: url("../images/diagram.svg");
+    }
+
+    &-austronaut::before {
+        background-image: url("../images/austronaut.svg");
+    }
+}
+
+.features {
+    &-subtitle {
+        margin-bottom: 10px;
+        width: 270px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.143;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $the-text-color-of-subtitle;
+    }
+
+    &-text {
+        width: 270px;
+        height: 75px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: $main-text-color;
+    }
+}
+
+// .icon-antenna::before {
+//     background-image: url("../images/antenna.svg");
+// }
+
+// .icon-clock::before {
+//     background-image: url("../images/clock.svg");
+// }
+
+// .icon-diagram::before {
+//     background-image: url("../images/diagram.svg");
+// }
+
+// .icon-austronaut::before {
+//     background-image: url("../images/austronaut.svg");
+// }
+
+// .features-subtitle {
+//     margin-bottom: 10px;
+//     width: 270px;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.143;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     color: $the-text-color-of-subtitle;
+// }
+
+// .features-text {
+//     width: 270px;
+//     height: 75px;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.714;
+//     letter-spacing: 0.03em;
+//     color: $main-text-color;
+// }
+
+// .list-item::before {
+//     display: block;
+//     content: "";
+//     height: 120px;
+//     background-size: 70px 70px;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-color: #f5f4fA;
+//     margin-bottom: 30px;
+//     border-radius: 4px;
+// }

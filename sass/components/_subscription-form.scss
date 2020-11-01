@@ -1,0 +1,51 @@
+.subscription-form {
+    margin-left: 93px;
+
+    &_input {
+        display: flex;
+        align-items: center;
+        width: 358px;
+        height: 50px;
+        padding-left: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        background: $background-footer;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &-btn {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 50px; 
+        padding: 10px 28px;
+        margin-left: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        color: #fff;
+        background: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px; 
+        border: 1px solid transparent;
+    }
+}
+
+.subscription-input {
+    display: flex;
+}
+
+.social-svg {
+    margin-left: 10px;
+}

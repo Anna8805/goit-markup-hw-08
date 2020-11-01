@@ -1,0 +1,25 @@
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    align-items: center;
+
+    .customers & {
+        padding: 94px 0;
+    }
+
+    .footer & {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .header & {
+        display: flex;
+    }
+
+    .hero & {
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
