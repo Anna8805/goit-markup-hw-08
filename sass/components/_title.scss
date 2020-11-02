@@ -1,10 +1,19 @@
 .title {
-    height: 42px;
-    margin-bottom: 50px;
+    height: 33px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
+    font-size: 28px;
+    line-height: 1.179;
     text-align: center;
     letter-spacing: 0.03em;
     color: $the-text-color-of-subtitle; 
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        height: 42px;
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.167;
+    }
 }

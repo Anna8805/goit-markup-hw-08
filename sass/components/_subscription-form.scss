@@ -1,12 +1,11 @@
 .subscription-form {
-    margin-left: 93px;
-
     &_input {
         display: flex;
         align-items: center;
-        width: 358px;
+        width: 100%;
         height: 50px;
         padding-left: 16px;
+        margin-bottom: 20px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
@@ -29,7 +28,7 @@
         width: 200px;
         height: 50px; 
         padding: 10px 28px;
-        margin-left: 12px;
+        margin-left: 125px;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.875;
@@ -42,10 +41,33 @@
     }
 }
 
-.subscription-input {
-    display: flex;
-}
-
 .social-svg {
     margin-left: 10px;
 }
+
+@media screen and (min-width: 1200px) {
+    .subscription-form {
+        margin-left: 93px;
+    }
+    
+    .subscription-input {
+        display: flex;
+    }
+
+    .subscription-form {
+        &_input {
+            width: 358px;
+        }
+    }
+
+    .subscription-form {
+        &-btn {
+            margin-left: 12px;
+        }
+    }
+}
+
+
+
+
+

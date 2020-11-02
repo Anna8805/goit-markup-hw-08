@@ -1,11 +1,6 @@
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
     background: $background-footer;
-
-    &-list {
-        list-style: none;
-    }
 
     &-address {
         margin-top: 20px;
@@ -14,10 +9,15 @@
     &-contacts {
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1.714;
+        text-align: center;
         letter-spacing: 0.03em;
     }
-    
+
+    &-list {
+        list-style: none;
+    }
+
     &-social-list {
         display: flex;
         justify-content: space-between;
@@ -25,25 +25,22 @@
         height: 44px;
     }
 
-    &-right-part {
-        margin-left: 70px;
+    &-social-list {
+        margin-left: 122px;
     }
-}
-
-.logo-white {
-    color: $logo-text-footer;
 }
 
 .footer-item {
-    margin-top: 9px;
-
-    &-link {
-        color: $footer-color-item;
-    }
+    margin-top: 8px;
 
     &-address-link {
         color: $footer-color-item-address;
     }
+
+    &-link {
+        color: $footer-color-item;
+    }
+        
 }
 
 .subtitle {
@@ -54,6 +51,8 @@
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 20px;
+    padding-top: 60px;
+    text-align: center;
 }
 
 .social-list-link-dark {
@@ -65,7 +64,7 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
     &:hover,
     &:focus {
         background-color: $accent-color;
@@ -78,46 +77,50 @@
     fill: #fff;
 }
 
-// .footer .container {
-//     display: flex;
-//     align-items: baseline;
-// }
+@media screen and (min-width: 768px) {
+    .footer {
+        &-left-part {
+            width: 232px;
+        }
 
-// .footer-list {
-//     list-style: none;
-// }
+        &-right-part {
+            width: 206px;
+        }
 
-// .social-list-link-dark:hover,
-// .social-list-link-dark:focus {
-//     background-color: $accent-color;
-// }
+        &-social-list {
+            margin-left: 0;
+        }
 
-// .footer-social-list {
-//     display: flex;
-//     justify-content: space-between;
-//     width: 206px;
-//     height: 44px;
-// }
+        // &-contacts {
+        //     margin-left: 61px;
+        // }
+    }
+}
 
-// .footer-item-link {
-//     color: $footer-color-item;
-// }
+@media screen and (min-width: 1200px) {
+    .footer {
+        display: flex;
+        align-items: baseline;
+    
+        &-right-part {
+            margin-left: 70px;
+        }
 
-// .footer-item-address-link {
-//     color: $footer-color-item-address;
-// }
+        &-social-list {
+            margin-left: 0;
+        }
 
-// .footer-right-part {
-//     margin-left: 70px;
-// }
+        &-contacts {
+            text-align: start;
+        }
+    }
 
-// .footer-address {
-//     margin-top: 20px;
-// }
+    .footer-item {
+        margin-top: 9px;
+    }
 
-// .footer-contacts {
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 24px;
-//     letter-spacing: 0.03em;
-// }
+    .subtitle {
+        text-align: start;
+        padding-top: 0;
+    }
+}
