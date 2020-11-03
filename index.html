@@ -11,55 +11,18 @@
     </head>
     <body class="body">
         <!-- Шапка сайта -->
-        <!-- <header class="header">
+        <header class="header">
             <div class="container">
                 <nav class="navigation">
-                    <a class="logo link" href="./index.html" aria-label="логотип WebStudio">Web<span class="logo-text-header">Studio</span></a> -->
-                    <!-- <div class="modal">
-                        <button type="button" class="close-btn" data-modal-close>
-                            <svg class="button-close-svg">
-                                <use href="./images/sprite.svg#icon-close"></use>
-                            </svg>
-                        </button>
-                        <form action="#" method="GET" class="contact-form">
-                            <h3 class="modal-subtitle">Оставьте свои данные, мы вам перезвоним</h3>
-                            <label class="modal-paragraph" for="user-name">
-                                Имя
-                                <span class="modal-paragraph-wrapper">
-                                    <input type="text" class="contact-form_input" name="user-name" id="user-name" required>
-                                    <svg width="12" height="12" class="modal-svg">
-                                        <use href="./images/sprite.svg#icon-man"></use>
-                                    </svg>
-                                </span>
-                            </label> 
-                            <label class="modal-paragraph" for="user-phone">
-                                Телефон
-                                <span class="modal-paragraph-wrapper">
-                                    <input type="tel" class="contact-form_input" name="user-phone" id="user-phone" required>
-                                    <svg width="13" height="13" class="modal-svg">
-                                        <use href="./images/sprite.svg#icon-tel"></use>
-                                    </svg>
-                                </span>
-                            </label> 
-                            <label class="modal-paragraph" for="user-email">
-                                Почта
-                                <span class="modal-paragraph-wrapper">
-                                    <input type="email" class="contact-form_input" name="user-email" id="user-email" required>
-                                    <svg width="15" height="12" class="modal-svg">
-                                        <use href="./images/sprite.svg#icon-mail"></use>
-                                    </svg>
-                                </span>
-                            </label>
-                            <h4 class="contact-form_group-title">Комментарий</h4> 
-                            <textarea name="user-message" class="contact-form_message" placeholder="Введите текст"></textarea>
-                            <input type="checkbox" class="contact-form_radio visually-hidden" name="check-policy" value="accapt-policy" id="check-policy">
-                            <label class="checkbox-text" for="check-policy">Соглашаюсь с рассылкой и принимаю &nbsp;<a class="checkbox-link" href="#">Условия договора</a></label>
-                            <div class="btn-wrapper"> 
-                                <button type="submit" class="contact-form-btn">Отправить</button>
-                            </div>
-                        </form>
-                    </div> -->
-                    <!-- <ul class="navigation-list list">
+                    <a class="logo link" href="./index.html" aria-label="логотип WebStudio">Web<span class="logo-text-header">Studio</span></a>
+                    <button type="button" class="menu-button is" aria-expanded="false" aria-controls="menu-container">
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="icon-close" href="./images/sprite-menu.svg#icon-close_40px"></use>
+                            <use class="icon-menu" href="./images/sprite-menu.svg#icon-menu_40px"></use>
+                        </svg>
+                    </button>
+                    <div class="menu-container" id="menu-container"></div>
+                    <ul class="navigation-list list">
                         <li class="navigation-list-item">
                             <a class="navigation-list-link-color link underline" href="">Студия</a>
                         </li> 
@@ -70,20 +33,20 @@
                             <a class="navigation-list-link link" href="">Контакты</a>
                         </li>
                     </ul>
-                </nav> -->
+                </nav>
                 <!-- Контакты  -->
-                <!-- <address class="address">
-                    <ul class="link list">
-                        <li class="link-item">
-                            <a class="header-contacts-link link" href="mailto:info@devstudio.com">
+                <address class="address">
+                    <ul class="address-link list">
+                        <li class="address-item">
+                            <a class="address-link-item link" href="mailto:info@devstudio.com">
                                 <svg class="icon-envelope">
                                     <use href="./images/sprite.svg#icon-envelope"></use>
                                 </svg>
                                 info@devstudio.com
                             </a>
                         </li>
-                        <li class="link-item">
-                            <a class="header-contacts-link link" href="tel:+380961111111">
+                        <li class="address-item">
+                            <a class="address-link-item link" href="tel:+380961111111">
                                 <svg class="icon-smartphone">
                                     <use href="./images/sprite.svg#icon-smartphone"></use>
                                 </svg>
@@ -93,9 +56,9 @@
                     </ul>
                 </address>
             </div>   
-        </header>  -->
+        </header> 
 
-        <!-- <main> -->
+        <main>
             <!-- HERO --> 
             <!-- <section class="hero">
                 <div class="container">
@@ -107,7 +70,7 @@
             <section class="features-section">
                 <div class="container">
                     <h2 hidden>Особенности</h2>
-                    <ul class="list">
+                    <ul class="features-list list">
                         <li class="list-item icon-antenna">
                             <h3 class="features-subtitle">Внимание к деталям</h3>
                             <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -127,8 +90,8 @@
                     </ul>
                 </div>
             </section>
-            <!-- Галерея работ -->           
-            <!-- <section class="gallery-section">
+            <!-- Галерея работ -->
+            <section class="gallery-section">
                 <div class="container">
                     <h2 class="title">Чем мы занимаемся</h2>
                     <ul class="gallery-list list">
@@ -152,7 +115,7 @@
                         </li>
                     </ul>
                 </div>
-            </section>            -->
+            </section>
             <!-- Наша команда -->
             <!-- <section class="team-section">
                 <div class="container">
@@ -425,7 +388,7 @@
                 </form>
             </div>
         </footer>
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal animate__bounceIn">
                 <button type="button" class="close-btn" data-modal-close>
                     <svg class="button-close-svg">
@@ -470,7 +433,7 @@
                     </div>
                 </form>
             </div>
-        </div> -->
+        </div>
         <script src="./js/modal.js"></script> 
     </body>
 </html>

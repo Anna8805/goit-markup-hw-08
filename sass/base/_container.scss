@@ -13,6 +13,11 @@
     .container {
         width: 768px;
 
+        .header & {
+            display: flex;
+            align-items: center;
+        }
+
         .footer & {
             display: flex;
             align-items: center;
@@ -24,10 +29,6 @@
     .container {
         width: 1200px;
         
-        .header & {
-            display: flex;
-        }
-
         .footer & {
             display: flex;
             align-items: baseline;
