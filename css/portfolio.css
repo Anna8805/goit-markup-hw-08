@@ -473,6 +473,14 @@ img {
   color: #212121;
 }
 
+.portfolio-container {
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #eee;
+}
+
 .gallery-portfolio-img-wrapper {
   position: relative;
   overflow: hidden;
