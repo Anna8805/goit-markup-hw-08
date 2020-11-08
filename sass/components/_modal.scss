@@ -19,7 +19,7 @@
 
 .modal {
     position: absolute;
-    top: 31%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 100%;
@@ -220,15 +220,10 @@
     .backdrop { 
         padding: 159px 208px;
     }
-
-    .modal {
-        top: 40%;
-    }
 }
 
 @media screen and (min-width: 1200px) {
     .modal {
-        top: 50%;
         width: 528px;
         height: 581px;
 
