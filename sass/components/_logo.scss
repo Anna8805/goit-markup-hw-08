@@ -3,7 +3,7 @@
     font-weight: 400;
     font-size: 26px;
     line-height: 1.192;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     color: $accent-color;
     
     &-text-header {
@@ -11,8 +11,9 @@
     } 
 
     .footer & {
-        text-align: center;
-        margin-left: 148px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &-white {
@@ -22,6 +23,10 @@
 
 @media screen and (min-width: 768px) {
     .logo {
+        .header & {
+            margin-right: 88px;
+        }
+
         .footer & {
             margin-left: 100px;
         }
@@ -30,16 +35,13 @@
 
 @media screen and (min-width: 1200px) {
     .logo {
+        .header & {
+            margin-right: 93px;
+        }
+
         .footer & {
             text-align: start;
             margin-left: 0;
         }
     }
 }
-
-// 1200px
-// .logo {
-//    
-//     .header & {
-//         margin-right: 93px;
-//     }

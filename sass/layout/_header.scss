@@ -1,13 +1,17 @@
 .header {
     position: relative;
     height: 60px;
-    padding: 10px 0;
     border-bottom: 1px solid #ececec;
 }
 
 .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     &-list {
         &-link {
+            display: block;
             font-weight: 500;
             font-size: 14px;
             line-height: 1.143;
@@ -20,9 +24,12 @@
                 color: $accent-color;
             }
         }
+
+        &-item {
+            position: relative;
+        }
         
         &-link-color {
-            position: relative;
             display: block;
             font-weight: 500;
             font-size: 14px;
@@ -75,47 +82,35 @@
 
 .underline::after {
     position: absolute;
-    left: 0;
     content: "";
     display: block;
-    height: 4px;
     width: 100%;
-    bottom: -33px;
+    height: 4px;
+    bottom: -1px;
     border-radius: 2px;
     background-color: $accent-color;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .navigation {
-        justify-content: space-between;
-
         &-list {
             margin-bottom: 60px;
 
-            &-link {
-                font-size: 18px;
-                line-height: 1.167;
-            }
-                
+            &-link,
             &-link-color {
                 font-size: 18px;
                 line-height: 1.167;
+                padding-bottom: 12px;
             }
         }
 
         &-list-item:not(:first-child) {
-            margin-top: 40px;
+            margin-top: 28px;
         }
     }
 
     .address-item:not(:first-child) {
         margin-top: 10px;
-    }
-
-    .underline::after {
-        width: 61px;
-        bottom: -8px;
-        margin-left: 75px;
     }
 }
 
@@ -123,17 +118,11 @@
     .address-item:not(:first-child) {
         margin-top: 10px;
     }
-
-    .underline::after {
-        position: absolute;
-        bottom: -32px;
-    }
 }
 
 @media screen and (min-width: 768px) {
     .header {
         height: 80px;
-        padding: 21px 0;
     }
     
     .menu-button {
@@ -144,54 +133,56 @@
         display: flex;
     }
 
-    .navigation-list {
-        margin-left: 88px;
-        margin-right: 84px;
-    }
-
     .navigation {
+        &-list {
+            margin-right: 84px;
+        }
+
         &-list-item:not(:last-child) {
             margin-right: 50px;
+        }
+
+        &-list-link,
+        &-list-link-color {
+            margin-top: 32px;
+            margin-bottom: 32px;
         }
     }
 
     .address {
         margin-left: auto;
-    }
 
-    .address-item-link {
-        display: flex;
-        align-items: center;
-        font-size: 12px;
+        &-item-link {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+        }
     }
 }
     
 @media screen and (min-width: 1200px) {
     .header {
         height: 80px;
-        padding: 25px 0;
     }
 
     .navigation-list {
-        margin-left: 93px;
         margin-right: 305px;
     }
 
-    .address-link {
-       display: flex; 
-       margin-left: auto;
-    }
+    .address {
+        &-link {
+            display: flex; 
+            margin-left: auto;
+         }
 
-    .address-item-link {
-        font-size: 14px;
-        line-height: 1.143;
+        &-item-link {
+            font-size: 14px;
+            line-height: 1.143;
+        }
     }
 
     .address-item:not(:last-child) {
         margin-right: 30px;
-    }
-
-    .address-item:not(:last-child) {
         margin-bottom: 0;
     }
 } 

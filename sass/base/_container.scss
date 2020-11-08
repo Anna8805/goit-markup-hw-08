@@ -6,10 +6,15 @@
     .container {
         width: 480px;
         margin: 0 auto;
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .container {
         .header & {
             display: flex;
             justify-content: space-between;
+            padding-top: 16px;
         }
     }
 }

@@ -18,7 +18,12 @@
         background-color: $accent-color;
     }
 }
- 
+
+.footer-social-list-item,
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
 .social-list-svg-light {
     width: 20px;
     height: 20px;

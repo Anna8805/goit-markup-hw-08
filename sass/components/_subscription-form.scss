@@ -28,7 +28,7 @@
         width: 200px;
         height: 50px; 
         padding: 10px 28px;
-        margin-left: 125px;
+        margin: 0 auto;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.875;
@@ -42,10 +42,9 @@
 }
 
 .social-svg {
+    height: 24px;
     margin-left: 10px;
 }
-
-
 
 @media screen and (min-width: 768px) and (max-width:1199px) {
     .subscription-form {
@@ -61,21 +60,17 @@
 
 
 @media screen and (min-width: 1200px) {
-    .subscription-form {
-        margin-left: 93px;
-    }
-    
     .subscription-input {
         display: flex;
     }
 
     .subscription-form {
+        margin-left: 93px;
+
         &_input {
             width: 358px;
         }
-    }
 
-    .subscription-form {
         &-btn {
             margin-left: 12px;
         }
