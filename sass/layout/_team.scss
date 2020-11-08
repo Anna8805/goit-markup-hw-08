@@ -50,6 +50,7 @@
     }
 }
 
+
 @media screen and (min-width: 768px) {
     .team-list {
         display: flex;
@@ -78,6 +79,10 @@
         &-section {
         padding: 94px 0;
         }
+
+        // &-list-img {
+        //     width: 270px;
+        // }
     }
 
     .team-section .list {
@@ -90,13 +95,13 @@
         justify-content: space-between;
     }
 
+    .team-item:not(:last-child) {
+        margin-right: 30px;
+    }
+
     .item-container {
         padding: 30px 32px;
         width: 270px;
         height: 168px;
     }
 }
-
-
-
-
