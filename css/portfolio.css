@@ -413,7 +413,7 @@ img {
     display: flex;
   }
   .navigation-list {
-    margin-right: 84px;
+    margin-right: 70px;
   }
   .navigation-list-item:not(:last-child) {
     margin-right: 50px;
