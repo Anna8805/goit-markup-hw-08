@@ -36,9 +36,13 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .customers-item:not(:nth-last-child(-n+2)) {
-        margin-bottom: 30px;
-    } 
+    .customers-item {
+        width: 45%;
+
+        &:not(:nth-last-child(-n+2)) {
+            margin-bottom: 30px;
+        } 
+    }
 }
 
 @media screen and (min-width: 480px) {
@@ -46,6 +50,7 @@
         width: 210px;
     }
 }
+
 @media screen and (min-width:768px) {
     .customers-item-link {
         width: 226px;
